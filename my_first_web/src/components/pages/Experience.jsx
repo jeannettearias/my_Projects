@@ -2,7 +2,6 @@
 import '../../styles/layout/_experience.scss'
 
 function Experience() {
-
     return (
         <article className="exp__box">
             <h3 className="title__h3">

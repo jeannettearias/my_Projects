@@ -1,0 +1,15 @@
+{
+    "name": "Project Name",
+    "repo": "https://github.com/example/repo",
+    "demo": "https://example.com/demo",
+    "technologies": [
+        "React",
+        "JavaScript",
+        "CSS"
+    ],
+    "desc": "Project description",
+    "author": "Author Name",
+    "job": "Software Developer",
+    "photo": "/Users/jeannettearias/workspace/my_Projects/my_Projects/my_first_web/public/img/me.jpeg",
+    "image": "/Users/jeannettearias/workspace/my_Projects/my_Projects/my_first_web/public/img/projects/harry-potter-picture.png"
+}

@@ -8,7 +8,6 @@ function Contact() {
     const handleTextChange = (ev) => {
         setText(ev.target.value);
     };
-
     return (
         <article>
             <h2>Contact</h2>

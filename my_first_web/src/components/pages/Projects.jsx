@@ -1,25 +1,18 @@
-import '../../styles/layout/_project.scss';
-import ProjectCard from './ProjectCard';
-import PropTypes from 'prop-types'
-
+import PropTypes from 'prop-types';
+import Preview from './Preview';
 
 function Projects({ jsonData }) {
-
-
     return (
-        <section className="preview">
+        <div>
+            <h1 className='title'>Projects</h1>
+            <Preview jsonData={jsonData} />
 
-            <div className='projectImage'
-                style={{ backgroundImage: jsonData.image ? `url(${jsonData.image})` : null }}></div>
-            <ProjectCard jsonData={jsonData} />
-
-
-        </section>
+        </div>
     );
 }
-
 Projects.propTypes = {
-    jsonData: PropTypes.array.isRequired
+    jsonData: PropTypes.object.isRequired,
+
 };
 
 export default Projects;
