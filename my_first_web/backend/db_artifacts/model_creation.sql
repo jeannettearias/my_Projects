@@ -50,3 +50,21 @@ DEFAULT CHARACTER SET = utf8;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+/*
+PROJECT TABLE MODIFICATION
+*/
+
+ALTER TABLE `myprojects`.`projects` 
+DROP FOREIGN KEY `fk_projects_category`;
+ALTER TABLE `myprojects`.`projects` 
+ADD COLUMN `projects_github` VARCHAR(255) NOT NULL AFTER `projects_description`,
+ADD COLUMN `projects_datecreated` DATETIME NOT NULL AFTER `projects_status`,
+CHANGE COLUMN `projects_status` `projects_status` TINYINT NOT NULL ,
+CHANGE COLUMN `category_id` `projects_datecreated` INT NOT NULL ;
+ALTER TABLE `myprojects`.`projects` 
+ADD CONSTRAINT `fk_projects_category`
+  FOREIGN KEY (`projects_datecreated`)
+  REFERENCES `myprojects`.`category` (`category_id`);
+

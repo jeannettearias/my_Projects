@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "dev": "node --watch src/index.js",
+    "dev": " node --watch src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -16,6 +16,8 @@
   "license": "ISC",
   "dependencies": {
     "@stdlib/math-base-assert-is-odd": "^0.3.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.21.0",
     "myprojects": "^1.0.0",
     "mysql2": "^3.11.3"
